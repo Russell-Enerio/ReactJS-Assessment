@@ -1,0 +1,73 @@
+.form-container {
+    background-color: #FFEFD5;
+    display: flex;
+    justify-content: center;
+    height: 40vh;
+    padding: 5px 0;
+    margin: 5px 0 10px
+}
+
+.form-controller {
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    width: 40vw;
+    align-items: center;
+    border: 1px solid red;
+    border-radius: 5px;
+}
+
+.form__inputController {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+    width: 30vw;
+    height: 20vh;
+    top: 20%;
+    padding: 20px 20px 30px 20px;
+
+}
+
+
+.form__inputController input {
+    margin: 5px 2px;
+    border: none;
+}
+
+.form__inputController button {
+    margin: 5px 2px;
+}
+
+
+
+@media screen and (min-width: 769px) {
+    .form-controller{
+        width: 40vw;
+        height: 40vh;
+    }
+
+    .form__inputController{
+        height: 20vh;
+    }
+
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) { 
+    .form-controller{
+        
+        width: 50vw;
+        
+    }
+
+    .form__inputController{
+        margin:-10px auto;
+        height: 22vh;
+    }
+}
+
+@media only screen and (max-device-width: 480px) {
+    .form-controller{
+        width: 60vw;
+    }
+}

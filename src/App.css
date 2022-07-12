@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.back-button {
+  background-color: #00acee;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  width: 6vw;
+  margin-top: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.back-button a {
+  text-decoration: none;
+  display: flex;
+  text-decoration: none;
+  list-style: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.back-button a span {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  
+  
+}
+
+/* .MuiSvgIcon-root {
+  margin-right: 10px;
+} */
+
+
+.error-message {
+  position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin-top: 40px;
+  
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (min-width: 769px) and (max-device-width: 991px) {
+  .back-button{
+    margin-top: 20px;
+    width: 8vw;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) { 
+  .back-button{
+    margin-top: 20px;
+    width: 12vw;
+  }
+}
+
+@media only screen and (max-device-width: 480px) {
+  .back-button{
+    margin-top: 15px;
+    width: 20vw;
   }
 }
